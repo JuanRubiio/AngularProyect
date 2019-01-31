@@ -1,0 +1,17 @@
+<form (ngSubmit)="addProduct()" class="styleForm">
+  <mat-form-field class="example-full-width">
+
+      <input matInput placeholder="Name" type="text" name="name" [(ngModel)]="product.name">
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Description" type="text" name="description" [(ngModel)]="product.description">
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Price" type="number" name="price" [(ngModel)]="product.price">
+    </mat-form-field>
+      <button mat-raised-button type="submit">
+    
+        Save
+      </button>
+
+    </form>
